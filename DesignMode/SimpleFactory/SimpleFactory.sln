@@ -3,16 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleFactory1", "SimpleFactory1\SimpleFactory1.csproj", "{6A318392-0158-4514-AF6E-D8EA8E470E4E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleFactory1", "SimpleFactory1\SimpleFactory1.csproj", "{6A318392-0158-4514-AF6E-D8EA8E470E4E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E5DC008E-775D-41CD-8BCB-AEE9798CD7FC}"
 	ProjectSection(SolutionItems) = preProject
+		UML类图.txt = UML类图.txt
 		简单工厂模式.txt = 简单工厂模式.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleFactory2", "SimpleFactory2\SimpleFactory2.csproj", "{F862A128-3505-4750-8DE7-859EA226FC33}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleFactory2", "SimpleFactory2\SimpleFactory2.csproj", "{F862A128-3505-4750-8DE7-859EA226FC33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleFactory3", "SimpleFactory3\SimpleFactory3.csproj", "{98D5A68A-2C6A-4A61-B2A0-57405062670B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleFactory3", "SimpleFactory3\SimpleFactory3.csproj", "{98D5A68A-2C6A-4A61-B2A0-57405062670B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
