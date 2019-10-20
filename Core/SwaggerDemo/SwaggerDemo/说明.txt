@@ -1,0 +1,7 @@
+﻿使用Swagger
+
+环境
+ASP.NET Core Api 2.2
+
+引用
+Swashbuckle.AspNetCore 4.0.1
