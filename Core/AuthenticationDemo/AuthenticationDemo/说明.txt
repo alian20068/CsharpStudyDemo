@@ -1,0 +1,13 @@
+﻿实现功能：
+1.无状态的身份验证服务，使用请求头附加访问令牌
+2.基于功能点的权限访问控制，可将任意功能点权限集合授予用户或角色，无需硬编码角色权限
+
+环境
+ASP.NET Core 2.2
+
+引用项目
+Swashbuckle.AspNetCore 4.0.1
+
+
+学习地址
+https://mp.weixin.qq.com/s/lwDb4alQGpDldkPAMtxieg
