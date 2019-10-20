@@ -1,4 +1,4 @@
-﻿跨域
+﻿使用跨域
 
 环境
 ASP.NET Core Api 2.2
