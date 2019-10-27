@@ -4,10 +4,13 @@
 
 环境
 ASP.NET Core 2.2
+WebApi
 
 引用项目
 Swashbuckle.AspNetCore 4.0.1
 
 
 学习地址
-https://mp.weixin.qq.com/s/lwDb4alQGpDldkPAMtxieg
+https://www.cnblogs.com/dudu/p/6367303.html
+https://www.cnblogs.com/wiseant/p/10515842.html
+源码 https://gitee.com/xant77/CustomAuthorization.WebApi/tree/master/CustomAuthorization.Api/
