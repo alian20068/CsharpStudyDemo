@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 
 namespace AuthenticationDemo.Authentication
 {
+    /// <summary>
+    /// 验证服务接口
+    /// </summary>
     public interface IAuthenticationService
     {
         /// <summary>

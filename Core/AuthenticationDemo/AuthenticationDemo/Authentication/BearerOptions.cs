@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace AuthenticationDemo.Authentication
 {
+    /// <summary>
+    /// 身份验证选项类
+    /// </summary>
     public class BearerOptions : AuthenticationSchemeOptions
     {
         public BearerOptions()
