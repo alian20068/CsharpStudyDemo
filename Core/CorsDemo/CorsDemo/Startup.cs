@@ -53,6 +53,9 @@ namespace CorsDemo
                 app.UseHsts();
             }
 
+            //启用跨域
+            app.UseCors("any");
+
             app.UseHttpsRedirection();
             app.UseMvc();
         }
