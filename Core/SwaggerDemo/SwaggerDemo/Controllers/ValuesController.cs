@@ -1,8 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
 
 namespace SwaggerDemo.Controllers
 {
@@ -10,6 +7,10 @@ namespace SwaggerDemo.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        /// <summary>
+        /// 这是一个注释
+        /// </summary>
+        /// <returns></returns>
         // GET api/values
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
@@ -17,7 +18,15 @@ namespace SwaggerDemo.Controllers
             return new string[] { "value1", "value2" };
         }
 
-        // GET api/values/5
+        /// <summary>
+        /// 这是另一个注释
+        /// </summary>
+        /// <remarks>
+        /// 例子：
+        /// GET api/values/5
+        /// </remarks>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("{id}")]
         public ActionResult<string> Get(int id)
         {

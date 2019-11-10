@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
+using System.IO;
 
 namespace SwaggerDemo
 {
@@ -34,8 +28,17 @@ namespace SwaggerDemo
                     Title = "My API 文档",
                     Version = "1.0.0",
                     Description = "使用Swagger示例",
-                    //可定义作者、许可证等
+                    Contact = new Swashbuckle.AspNetCore.Swagger.Contact { Email = "newjoin@foxmail.com", Name = "NewJoin", Url = "http://www.baidu.com/" },
+                    //可定义许可证等
                 });
+
+                //要显示注释，须输出 bin\Debug\netcoreapp2.2\SwaggerDemo.xml
+                //获取应用程序目录
+                var bathPath = Path.GetDirectoryName(typeof(Program).Assembly.Location);
+                var xmlPath = Path.Combine(bathPath, "SwaggerDemo.xml");
+                //启用XML注释
+                options.IncludeXmlComments(xmlPath);
+
             });
         }
 

@@ -3,5 +3,11 @@
 环境
 ASP.NET Core Api 2.2
 
-引用
+包
 Swashbuckle.AspNetCore 4.0.1
+
+RESTful 文档格式地址
+https://localhost:44328/index.html
+
+学习文档
+https://www.cnblogs.com/yilezhu/p/9241261.html
