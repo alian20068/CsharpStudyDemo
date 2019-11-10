@@ -1,4 +1,9 @@
-﻿namespace AuthenticationDemo.Security
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace AuthenticationDemo.Security
 {
     /// <summary>
     /// 定义特征类型。此类允许继承以方便追加自定义类型。

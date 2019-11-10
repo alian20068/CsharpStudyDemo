@@ -1,9 +1,14 @@
-﻿namespace AuthenticationDemo.Security.Session
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace AuthenticationDemo.Security.Session
 {
     /// <summary>
     /// 会话信息接口
     /// </summary>
-    public interface IClaimsSession
+    interface IClaimsSession
     {
         /// <summary>
         /// 访问令牌
