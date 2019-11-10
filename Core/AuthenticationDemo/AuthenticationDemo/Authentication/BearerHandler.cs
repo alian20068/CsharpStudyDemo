@@ -4,7 +4,6 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Security.Claims;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
@@ -12,13 +11,14 @@ using System.Threading.Tasks;
 namespace AuthenticationDemo.Authentication
 {
     /// <summary>
-    /// 身份验证处理器
+    /// 自己实现的身份验证处理器
     /// </summary>
     public class BearerHandler : AuthenticationHandler<BearerOptions>
     {
         private const string KEY_AUTHORIZATION = "authorization";
         private readonly IHttpContextAccessor httpContextAccessor;
         private readonly IAuthenticationService authService;
+
         public BearerHandler(IHttpContextAccessor httpContextAccessor,
             IAuthenticationService authService,
             IOptionsMonitor<BearerOptions> options,
@@ -95,6 +95,7 @@ namespace AuthenticationDemo.Authentication
                 Principal = principal,
                 //SecurityToken = validatedToken
             };
+            //验证成功
             validatedContext.Success();
             /* 为了提高并发能力，通常会在控制器类中使用异步方法。调用异步方法时，会获取一个新线程来执行，待方法返回时,
                再重新从线程池中恢复一个线程作为当前线程，所以不适合通过Thread.CurrentPrincipal保存用户信息。

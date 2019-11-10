@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace AuthenticationDemo.Authentication
+﻿namespace AuthenticationDemo.Authentication
 {
     /// <summary>
     /// 验证服务接口
