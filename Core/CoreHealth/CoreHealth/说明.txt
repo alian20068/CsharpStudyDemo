@@ -1,0 +1,7 @@
+﻿ASP.NET Core 2.2
+
+包
+Microsoft.Extensions.Diagnostics.HealthChecks
+2.2.0
+
+https://mp.weixin.qq.com/s/jItt94cymaO6BntjNgAw4A
