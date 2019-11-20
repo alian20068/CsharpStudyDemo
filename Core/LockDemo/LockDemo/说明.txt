@@ -1,0 +1,2 @@
+﻿学习地址
+https://docs.microsoft.com/zh-cn/dotnet/csharp/language-reference/keywords/lock-statement
