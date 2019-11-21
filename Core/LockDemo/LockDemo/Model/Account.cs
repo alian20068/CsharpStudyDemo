@@ -14,16 +14,23 @@ namespace LockDemo.Model
             balance = initialBalance;
         }
 
-        public decimal Debit(decimal amount)
+        /// <summary>
+        /// 扣
+        /// </summary>
+        /// <param name="amount"></param>
+        /// <returns></returns>
+        public decimal Debit(decimal amount, int index)
         {
             lock (lockObj)
             {
                 if (balance >= amount)
                 {
-                    Console.WriteLine($"借前:{balance,5}");
-                    Console.WriteLine($"借走:{amount,5}");
+                    StringBuilder s = new StringBuilder();
+                    s.Append($"{balance,5}-{amount,5}=");
                     balance = balance - amount;
-                    Console.WriteLine($"借后:{balance,5}");
+                    s.Append($"{balance,5}");//等同于string.Format("{0,5}", balance);//指定字符串宽度为5，右对齐
+                    s.Append($" 线程号{index}");
+                    Console.WriteLine(s.ToString());
                     
                     return amount;
                 }
@@ -32,14 +39,20 @@ namespace LockDemo.Model
             }
         }
 
-        public void Credit(decimal amount)
+        /// <summary>
+        /// 加
+        /// </summary>
+        /// <param name="amount"></param>
+        public void Credit(decimal amount, int index)
         {
             lock (lockObj)
             {
-                Console.WriteLine($"贷前:{balance,5}");
-                Console.WriteLine($"贷来:{amount,5}");
+                StringBuilder s = new StringBuilder();
+                s.Append($"{balance,5}+{amount,5}=");
                 balance = balance + amount;
-                Console.WriteLine($"贷后:{balance,5}");
+                s.Append($"{balance,5}");
+                s.Append($" 线程号{index}");
+                Console.WriteLine(s.ToString());
             }
         }
 

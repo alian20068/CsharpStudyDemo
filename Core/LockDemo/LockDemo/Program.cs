@@ -16,24 +16,24 @@ namespace LockDemo
             for (int i = 0; i < arrTask.Length; i++)
             {
                 arrTask[i] = Task.Run(
-                    () => RandomlyUpdate(account)
+                    () => RandomlyUpdate(account, i)
                     );
             }
 
             Task.WaitAll(arrTask);
         }
 
-        static void RandomlyUpdate(Account account)
+        static void RandomlyUpdate(Account account, int index)
         {
             var rnd = new Random();
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 100; i++)
             {
                 var amount = rnd.Next(1, 100);
                 var doCredit = rnd.NextDouble() < 0.5;
                 if (doCredit)
-                    account.Credit(amount);
+                    account.Credit(amount, index);
                 else
-                    account.Debit(amount);
+                    account.Debit(amount, index);
             }
         }
 
