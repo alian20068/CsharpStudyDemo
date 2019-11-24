@@ -1,0 +1,4 @@
+﻿ASP.NET Core 2.2 Api
+
+包
+Microsoft.Extensions.Diagnostics.HealthChecks	2.2.0

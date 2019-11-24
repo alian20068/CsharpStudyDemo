@@ -1,0 +1,14 @@
+﻿ASP.NET Core 2.2 Api
+
+包
+Microsoft.Extensions.Diagnostics.HealthChecks	2.2.0
+AspNetCore.HealthChecks.UI	2.2.35
+
+配置文件
+appsettings.json
+
+参考
+https://www.c-sharpcorner.com/article/implementing-net-core-health-checks/
+
+扩展
+如果用的是EFCore，数据库Check有现成的包：Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore
